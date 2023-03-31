@@ -5,6 +5,7 @@ app = express();
 port = process.env.port || 7000
 
 mongoose.connect('mongodb+srv://chelsy:12345@nodeexpress-jwt-test.63qan.mongodb.net/Exam');
+mongoose.connect('mongodb+srv://tempuser:123@cluster0.f9d6o.gcp.mongodb.net/Exam');
 
 const schema = new mongoose.Schema({
     name: {type: String, required: true},
